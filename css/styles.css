@@ -1,0 +1,28 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-color: rgb(255, 232, 0);
+}
+.row-content {
+    padding: 50px 0;
+/*    border-bottom: 1px ridge;*/
+    min-height: 200px;
+}
+.navbar {
+    background-color: rgb(255, 18, 0);
+}
+
+.site-footer {
+    background-color: rgb(255, 232, 0);
+    padding: 20px 0px;
+}
+.site-footer ul a {
+    color: black;
+}
+.btn-social-icon .fa {
+    color: white;
+}
