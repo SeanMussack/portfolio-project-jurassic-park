@@ -7,13 +7,14 @@ body {
     padding: 30px;
     background-color: rgb(255, 232, 0);
 }
+.navbar {
+    background-color: rgb(255, 18, 0);
+}
+
 .row-content {
     padding: 50px 0;
 /*    border-bottom: 1px ridge;*/
     min-height: 200px;
-}
-.navbar {
-    background-color: rgb(255, 18, 0);
 }
 
 .site-footer {
