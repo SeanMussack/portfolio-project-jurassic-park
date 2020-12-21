@@ -68,6 +68,17 @@ h5 {
 .btn-social-icon .fa {
     color: white;
 }
+.btn-primary {
+}
+.site-footer .btn-danger {
+    background-color: rgb(255, 18, 0);
+    margin-bottom: 10px;
+    color: white;
+    border: 0px;
+}
+.site-footer .btn-danger:hover {
+    background-color: rgb(200,18,0);
+}
 .site-copyright {
     text-align: center;
     font-size: small;

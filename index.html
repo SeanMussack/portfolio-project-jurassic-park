@@ -95,46 +95,57 @@
     <footer class="site-footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 col-md-4 col-lg">
-                    <h5>Park Info</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="park-info/calendar-and-hours.html">Calendar & Hours</a></li>
-                        <li><a href="park-info/calendar-and-hours.html">Park Map</a></li>
-                        <li><a href="park-info/calendar-and-hours.html">Visitor Center</a></li>
-                        <li><a href="park-info/calendar-and-hours.html">Transport</a></li>
-                        <li><a href="park-info/calendar-and-hours.html">Jobs</a></li>
-                        <li><a href="park-info/calendar-and-hours.html">FAQ</a></li>
-                    </ul>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Park Info</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="park-info/calendar-and-hours.html">Calendar & Hours</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Park Map</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Visitor Center</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Transport</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Jobs</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <h5>Things To Do</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="things-to-do/island-tour.html">Island Tour</a></li>
-                        <li><a href="things-to-do/learning-lab.html">Learning Lab</a></li>
-                        <li><a href="things-to-do/cafe.html">Cafe</a></li>
-                        <li><a href="things-to-do/gift-shop.html">Gift Shop</a></li>
-                    </ul>
-                    <h5><a href="dinosaurs.html">Dinosaurs</a></h5>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Things To Do</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="things-to-do/island-tour.html">Island Tour</a></li>
+                            <li><a href="things-to-do/learning-lab.html">Learning Lab</a></li>
+                            <li><a href="things-to-do/cafe.html">Cafe</a></li>
+                            <li><a href="things-to-do/gift-shop.html">Gift Shop</a></li>
+                        </ul>
+                        <h5><a href="dinosaurs.html">Dinosaurs</a></h5>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <h5>Tickets</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="tickets/general-admission.html">General Admission</a></li>
-                        <li><a href="tickets/season-passes.html">Season Passes</a></li>
-                        <li><a href="tickets/group-events.html">Group Events</a></li>
-                        <li><a href="tickets/birthday-parties.html">Birthday Parties</a></li>
-                    </ul>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Tickets</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="tickets/general-admission.html">General Admission</a></li>
+                            <li><a href="tickets/season-passes.html">Season Passes</a></li>
+                            <li><a href="tickets/group-events.html">Group Events</a></li>
+                            <li><a href="tickets/birthday-parties.html">Birthday Parties</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <div class="container-fluid">
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
                         <h5>Stay Connected</h5>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <div>
+                            <a role="button" data-toggle="modal" data-target="#newsletterModal" class="btn btn-danger">
+                                <i class="fa fa-envelope"></i> Newsletter
+                            </a>
+                        </div>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/JurassicWorld"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/JurassicPark2go"><i class="fa fa-twitter"></i></a>
                         <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                         <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/watch?v=-w-58hQ9dLk"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col col-md col-lg">
+                <div class="col col-md col-lg d-flex justify-content-center">
                     <div class="container-fluid">
                         <div class="row justify-content-around align-items-center">
                             <a href="index.html"><img src="img/Jurassic_Park_logo.png" class="img-fluid" width="200"/></a>
@@ -150,6 +161,39 @@
             </div>
         </div>
     </footer>
+
+    <div id="newsletterModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Newsletter Sign-up</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="newsletterEmail">Email address</label>
+                                    <input type="email" class="form-control-sm" id="newsletterEmail" placeholder="Enter email" required/>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletterCheckbox" required/>
+                                        <label class="form-check-label" for="newsletterCheckbox"> I am at least 13 years old</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
