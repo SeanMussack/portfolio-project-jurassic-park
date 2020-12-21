@@ -5,7 +5,8 @@ body {
 .jumbotron {
     margin: 0;
     padding: 10px;
-    background-color: rgb(255, 18, 0);
+    /*background-color: rgb(255, 18, 0);*/
+    background-color: black;
     color: white;
 /*    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
 }
@@ -28,19 +29,22 @@ h2 {
 
 .row-content {
     padding: 50px 0;
-/*    border-bottom: 1px ridge;*/
+/*    border-bottom: 1px ridge rgb(255, 18, 0);*/
     min-height: 200px;
 }
 
 .site-footer {
-    background-color: rgb(255, 232, 0);
+/*    background-color: rgb(255, 232, 0);*/
+    background-color: black;
     padding: 20px 0px;
 }
 h5 {
     text-transform: uppercase;
+    color: white;
 }
-.site-footer ul a {
-    color: black;
+.site-footer /*ul*/ a {
+/*    color: black;*/
+    color: rgb(255, 232, 0);
 }
 .btn-social-icon .fa {
     color: white;
