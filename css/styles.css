@@ -68,3 +68,12 @@ h5 {
 .btn-social-icon .fa {
     color: white;
 }
+.site-copyright {
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+}
+.site-copyright a {
+    color: inherit;
+    text-decoration: underline;
+}
