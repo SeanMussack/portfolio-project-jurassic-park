@@ -31,7 +31,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/Jurassic_Park_logo_name_big.png" height="60" width=auto /></a>
+            <a class="navbar-brand mx-auto" href="index.html"><img src="img/Jurassic_Park_logo_name_big.png" height="60" width=auto /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jurassicParkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,10 +45,38 @@
                 </ul>-->
                 <div class="navbar-nav text-nowrap">
                     <div class="row">
-                        <div class="col-sm nav-item"><a class="nav-link" href="park-info.html"><i class="fa fa-info-circle fa-md"></i> Park Info</a></div>
-                        <div class="col-sm nav-item"><a class="nav-link" href="things-to-do.html"><i class="fa fa-paper-plane fa-md"></i> Things To Do</a></div>
-                        <div class="col-sm nav-item"><a class="nav-link" href="dinosaurs.html"><i class="fa fa-binoculars fa-md"></i> Dinosaurs</a></div>
-                        <div class="col-sm nav-item"><a class="nav-link" href="tickets.html"><i class="fa fa-ticket fa-md"></i> Tickets</a></div>
+                        <div class="col-md nav-item px-sm-0 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownParkInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--<i class="fa fa-info-circle fa-md"></i> -->Park Info</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownParkInfo">
+                                <a class="dropdown-item" href="park-info/calendar-and-hours.html"><i class="fa fa-calendar fa-md"></i> Calendar & Hours</a>
+                                <a class="dropdown-item" href="park-info/park-map.html"><i class="fa fa-map fa-md"></i> Park Map</a>
+                                <a class="dropdown-item" href="park-info/visitor-center.html"><i class="fa fa-institution fa-md"></i> Visitor Center</a>
+                                <a class="dropdown-item" href="park-info/transport.html"><i class="fa fa-ship fa-md"></i> Transport</a>
+                                <a class="dropdown-item" href="park-info/jobs.html"><i class="fa fa-briefcase fa-md"></i> Jobs</a>
+                                <a class="dropdown-item" href="park-info/faq.html"><i class="fa fa-question-circle fa-md"></i> FAQ</a>
+                            </div>
+                        </div>
+                        <div class="col-md nav-item px-sm-0 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownThingsToDo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--<i class="fa fa-paper-plane fa-md"></i> -->Things To Do</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownThingsToDo">
+                                <a class="dropdown-item" href="things-to-do/island-tour.html"><i class="fa fa-car fa-md"></i> Island Tour</a>
+                                <a class="dropdown-item" href="things-to-do/learning-lab.html"><i class="fa fa-flask fa-md"></i> Learning Lab</a>
+                                <a class="dropdown-item" href="things-to-do/cafe.html"><i class="fa fa-coffee fa-md"></i> Cafe</a>
+                                <a class="dropdown-item" href="things-to-do/gift-shop.html"><i class="fa fa-shopping-bag fa-md"></i> Gift Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-md nav-item px-sm-0">
+                            <a class="nav-link" href="dinosaurs.html" role="link"><!--<i class="fa fa-binoculars fa-md"></i> -->Dinosaurs</a>
+                        </div>
+                        <div class="col-md nav-item px-sm-0 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownTickets" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--<i class="fa fa-ticket fa-md"></i> -->Tickets</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownTickets">
+                                <a class="dropdown-item" href="tickets/general-admission.html"><i class="fa fa-ticket fa-md"></i> General Admission</a>
+                                <a class="dropdown-item" href="tickets/season-passes.html"><i class="fa fa-id-card fa-md"></i> Season Passes</a>
+                                <a class="dropdown-item" href="tickets/group-events.html"><i class="fa fa-group fa-md"></i> Group Events</a>
+                                <a class="dropdown-item" href="tickets/birthday-parties.html"><i class="fa fa-birthday-cake fa-md"></i> Birthday Parties</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
