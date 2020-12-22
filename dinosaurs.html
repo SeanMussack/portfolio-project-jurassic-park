@@ -16,32 +16,56 @@
 </head>
 <body>
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 col-md-4 align-self-center">
-                    <a href="index.html"><img src="img/Jurassic_Park_logo.png" class="img-fluid" /></a>
-                </div>
-                <div class="col align-self-center">
-                    <h1>Jurassic Park</h1>
-                    <h2>An adventure 65 million years in the making</h2>
-                </div>
+                <h2 class="col-md ">An adventure 65 million years in the making</h2>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-<!--            <a class="navbar-brand" href="#"><img src="img/Jurassic_Park_logo.png" height="30" width=auto /></a>-->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand mx-auto" href="index.html"><img src="img/Jurassic_Park_logo_name_big.png" height="60" width=auto /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jurassicParkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="jurassicParkNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="park-info.html"><i class="fa fa-info-circle fa-lg"></i> Park Info</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-binoculars fa-lg"></i> Dinosaurs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tickets.html"><i class="fa fa-ticket fa-lg"></i> Tickets</a></li>
-                </ul>
+            <div class="collapse navbar-collapse justify-content-end align-self-stretch" id="jurassicParkNavbar">
+                <div class="navbar-nav text-nowrap align-self-stretch">
+                    <div class="row">
+                        <div class="col-md nav-item px-md-0 dropdown d-flex">
+                            <a class="nav-link dropdown-toggle align-self-md-stretch pt-md-4" href="#" id="dropdownParkInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Park Info</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownParkInfo">
+                                <a class="dropdown-item" href="park-info/calendar-and-hours.html"><i class="fa fa-calendar fa-md"></i> Calendar & Hours</a>
+                                <a class="dropdown-item" href="park-info/park-map.html"><i class="fa fa-map fa-md"></i> Park Map</a>
+                                <a class="dropdown-item" href="park-info/visitor-center.html"><i class="fa fa-institution fa-md"></i> Visitor Center</a>
+                                <a class="dropdown-item" href="park-info/transport.html"><i class="fa fa-ship fa-md"></i> Transport</a>
+                                <a class="dropdown-item" href="park-info/jobs.html"><i class="fa fa-briefcase fa-md"></i> Jobs</a>
+                                <a class="dropdown-item" href="park-info/faq.html"><i class="fa fa-question-circle fa-md"></i> FAQ</a>
+                            </div>
+                        </div>
+                        <div class="col-md nav-item px-md-0 dropdown d-flex">
+                            <a class="nav-link dropdown-toggle align-self-md-stretch pt-md-4" href="#" id="dropdownThingsToDo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Things To Do</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownThingsToDo">
+                                <a class="dropdown-item" href="things-to-do/island-tour.html"><i class="fa fa-car fa-md"></i> Island Tour</a>
+                                <a class="dropdown-item" href="things-to-do/learning-lab.html"><i class="fa fa-flask fa-md"></i> Learning Lab</a>
+                                <a class="dropdown-item" href="things-to-do/cafe.html"><i class="fa fa-coffee fa-md"></i> Cafe</a>
+                                <a class="dropdown-item" href="things-to-do/gift-shop.html"><i class="fa fa-shopping-bag fa-md"></i> Gift Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-md nav-item px-md-0 d-flex">
+                            <a class="nav-link align-self-md-stretch pt-md-4" href="dinosaurs.html" role="link">Dinosaurs</a>
+                        </div>
+                        <div class="col-md nav-item px-md-0 dropdown d-flex">
+                            <a class="nav-link dropdown-toggle align-self-md-stretch pt-md-4" href="#" id="dropdownTickets" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tickets</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownTickets">
+                                <a class="dropdown-item" href="tickets/general-admission.html"><i class="fa fa-ticket fa-md"></i> General Admission</a>
+                                <a class="dropdown-item" href="tickets/season-passes.html"><i class="fa fa-id-card fa-md"></i> Season Passes</a>
+                                <a class="dropdown-item" href="tickets/group-events.html"><i class="fa fa-group fa-md"></i> Group Events</a>
+                                <a class="dropdown-item" href="tickets/birthday-parties.html"><i class="fa fa-birthday-cake fa-md"></i> Birthday Parties</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -56,31 +80,109 @@
     </div>
 
     <footer class="site-footer">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-6 col-sm-3">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="park-info.html">Park Info</a></li>
-                        <li><a href="#">Dinosaurs</a></li>
-                        <li><a href="tickets.html">Tickets</a></li>
-                    </ul>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Park Info</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="park-info/calendar-and-hours.html">Calendar & Hours</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Park Map</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Visitor Center</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Transport</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">Jobs</a></li>
+                            <li><a href="park-info/calendar-and-hours.html">FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/watch?v=-w-58hQ9dLk"><i class="fa fa-youtube"></i></a>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Things To Do</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="things-to-do/island-tour.html">Island Tour</a></li>
+                            <li><a href="things-to-do/learning-lab.html">Learning Lab</a></li>
+                            <li><a href="things-to-do/cafe.html">Cafe</a></li>
+                            <li><a href="things-to-do/gift-shop.html">Gift Shop</a></li>
+                        </ul>
+                        <h5><a href="dinosaurs.html">Dinosaurs</a></h5>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <h5>Contact</h5>
-                    <a role="button" class="btn btn-link" href="mailto:jurassicpark@ingen.co"><i class="fa fa-envelope-o"></i> jurassicpark@ingen.co</a>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Tickets</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="tickets/general-admission.html">General Admission</a></li>
+                            <li><a href="tickets/season-passes.html">Season Passes</a></li>
+                            <li><a href="tickets/group-events.html">Group Events</a></li>
+                            <li><a href="tickets/birthday-parties.html">Birthday Parties</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Stay Connected</h5>
+                        <div>
+                            <a role="button" data-toggle="modal" data-target="#newsletterModal" class="btn btn-danger">
+                                <i class="fa fa-envelope"></i> Newsletter
+                            </a>
+                        </div>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/JurassicWorld"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/JurassicPark2go"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/watch?v=-w-58hQ9dLk"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col col-md col-lg d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around align-items-center">
+                            <a href="index.html"><img src="img/Jurassic_Park_logo.png" class="img-fluid" width="200"/></a>
+                            <a href="https://jurassicpark.fandom.com/wiki/InGen"><img src="img/ingen-logo.png" height="80" width=auto/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row site-copyright">
+                <div class="col-12">
+                    <div><a href="privacy-policy.html">Privacy Policy</a></div>
+                    <div>All external websites linked were made by third parties with no connection to this website or its creator.</div>
+                    <div>For parody use only. No infringement intended.</div>
+                    <div>Jurassic Park and Jurassic World are trademarks and copyrights of Universal Studios and Amblin Entertainment, Inc.</div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div id="newsletterModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Newsletter Sign-up</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="newsletterEmail">Email address</label>
+                                    <input type="email" class="form-control-sm" id="newsletterEmail" placeholder="Enter email" required/>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletterCheckbox" required/>
+                                        <label class="form-check-label" for="newsletterCheckbox"> I am at least 13 years old</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
