@@ -19,19 +19,16 @@ h2 {
     font-style: italic;
     font-size: large;
     text-align: end;
+    margin-bottom: 0px;
 }
 .navbar {
     background-color: black;
     text-transform: uppercase;
-/*    padding: 0px 0px;*/
+/*    padding: 0px;*/
 }
 .nav-brand {
-    padding-right: 0px;
+    padding: 20px, 0px, 20px, 20px;
 }
-/*.nav-item {
-    padding-left: 0px;
-    padding-right: 0px;
-}*/
 .dropdown {
     position: initial;
 }
