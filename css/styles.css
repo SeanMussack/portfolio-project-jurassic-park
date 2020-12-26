@@ -9,6 +9,22 @@ body {
     background-color: black;
     color: white;
 }
+.skipBox {
+    position: absolute;
+    padding: 2px 5px;
+}
+.skipBox:focus-within {
+    background-color: white;
+    color: rgb(18,18,18);
+}
+.skipToMainContent {
+    /*display: none;*/
+    padding: 0px 5px;
+    text-decoration: underline;
+    color: black;
+}
+.skipToMainContent:focus {
+}
 h2 {
     font-style: italic;
     font-size: large;
