@@ -29,19 +29,19 @@ header {
     text-decoration: underline;
     color: black;
 }
-.topShortcuts {
+.top-shortcuts {
     margin-top: 5px;
 }
-.topShortcuts a {
+.top-shortcuts a {
     color:lightgray;
     margin-left: 10px;
     font-size: small;
     text-align: center;
 }
-.topShortcuts a:focus {
+.top-shortcuts a:focus {
     text-decoration: underline;
 }
-.topShortcuts i {
+.top-shortcuts i {
     color:rgb(255, 232, 0);
 }
 .navbar {
@@ -61,8 +61,6 @@ header {
     position: initial;
 }
 .dropdown-menu {
-/*    width: 80%;
-    margin-left: 10%;*/
     margin-top: 0px;
     border: 0px;
     background-color: white;
@@ -130,6 +128,9 @@ h4 {
 }
 .site-footer a:focus {
     text-decoration: underline;
+}
+.stay-connected {
+    margin-left: 10px;
 }
 .btn-social-icon .fa {
     color: white;
