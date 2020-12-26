@@ -1,8 +1,16 @@
+/*styles that apply to the whole page*/
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
+.fa {
+    margin-right: 6px;
+}
+h5 {
+    text-transform: uppercase;
+}
 
+/*styles that apply within the header*/
 header {
     margin: 0;
     background-color: black;
@@ -36,17 +44,15 @@ header {
 .topShortcuts i {
     color:rgb(255, 232, 0);
 }
-h2 {
-    font-style: italic;
-    font-size: large;
-    text-align: end;
-    margin-bottom: 0px;
+.navbar {
+    padding-top: 0px;
 }
 .nav-brand {
     padding: 0px, 0px, 20px, 20px;
 }
 .nav-link {
     text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav-link:hover, .nav-link:focus {
     background-color: rgb(18,18,18);
@@ -64,9 +70,6 @@ h2 {
 .dropdown-menu .row {
     width: inherit;
 }
-.col-md {
-    padding: 0px;
-}
 .navbar-imgcard {
     margin-left: 25px;
     padding-left: 0px;
@@ -76,9 +79,6 @@ h2 {
 .navbar-imgcard img {
     height: 150px;
     margin-right: 10px;
-}
-h5 {
-    text-transform: uppercase;
 }
 .navbar-imgcard p {
     margin-bottom: 0px;
@@ -103,9 +103,6 @@ h4 {
 .dropdown-menu a {
     color: darkred;
 }
-.fa {
-    margin-right: 6px;
-}
 .dropdown-menu a:hover, .dropdown-menu a:focus {
     color: darkred;
     text-decoration: underline;
@@ -114,11 +111,13 @@ h4 {
     background-color: rgb(250,250,250);
 }
 
+/*styles that apply within the main content*/
 .row-content {
     padding: 50px 0;
     min-height: 200px;
 }
 
+/*styles that apply within the footer*/
 .site-footer {
     background-image: linear-gradient(to right bottom, black,rgb(12,0,0), rgb(69,0,0));
     padding: 20px 0px;
