@@ -1,5 +1,6 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightgray;
 }
 
 .jumbotron {
@@ -16,10 +17,12 @@ h2 {
 }
 .navbar {
     background-color: black;
-    text-transform: uppercase;
 }
 .nav-brand {
     padding: 20px, 0px, 20px, 20px;
+}
+.nav-link {
+    text-transform: uppercase;
 }
 .nav-item:hover {
     background-color: rgb(12,12,12);
@@ -32,7 +35,56 @@ h2 {
     margin-left: 10%;*/
     margin-top: 0px;
     border: 0px;
-    background-color: lightgray;
+    background-color: white;
+}
+.dropdown-menu .row {
+    width: inherit;
+}
+.col-md {
+    padding: 0px;
+}
+.navbar-imgcard {
+    margin-left: 25px;
+    padding-left: 0px;
+    border: 1px lightgray solid;
+    color: darkgray;
+}
+.navbar-imgcard img {
+    height: 150px;
+    margin-right: 10px;
+}
+h5 {
+    text-transform: uppercase;
+}
+.navbar-imgcard p {
+    margin-bottom: 0px;
+}
+.navbar-imgcard .btn-danger {   
+    background-color: rgb(255, 18, 0);
+    border: 0px;
+    color: white;
+    margin: 3px 0px;
+}
+.navbar-imgcard .btn-danger:hover {
+    background-color: rgb(200,18,0);
+    text-decoration: none;
+    color: white;
+}
+h4 {
+    font-size: large;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-bottom: 1px gray solid;
+}
+.dropdown-menu a {
+    color: darkred;
+}
+.fa {
+    margin-right: 6px;
+}
+.dropdown-menu a:hover {
+    color: darkred;
+    text-decoration: underline;
 }
 
 .row-content {
@@ -44,8 +96,7 @@ h2 {
     background-image: linear-gradient(to right bottom, black,rgb(12,0,0), rgb(69,0,0));
     padding: 20px 0px;
 }
-h5 {
-    text-transform: uppercase;
+.site-footer h5 {
     color: white;
 }
 .site-footer a {
