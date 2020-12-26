@@ -65,7 +65,7 @@ h5 {
     color: white;
     margin: 3px 0px;
 }
-.navbar-imgcard .btn-danger:hover {
+.navbar-imgcard .btn-danger:hover, .navbar-imgcard .btn-danger:focus {
     background-color: rgb(200,18,0);
     text-decoration: none;
     color: white;
