@@ -24,8 +24,8 @@ h2 {
 .nav-link {
     text-transform: uppercase;
 }
-.nav-item:hover {
-    background-color: rgb(12,12,12);
+.nav-link:hover, .nav-link:focus {
+    background-color: rgb(18,18,18);
 }
 .dropdown {
     position: initial;
@@ -82,7 +82,7 @@ h4 {
 .fa {
     margin-right: 6px;
 }
-.dropdown-menu a:hover {
+.dropdown-menu a:hover, .dropdown-menu a:focus {
     color: darkred;
     text-decoration: underline;
 }
@@ -101,6 +101,9 @@ h4 {
 }
 .site-footer a {
     color: rgb(255, 232, 0);
+}
+.site-footer a:focus {
+    text-decoration: underline;
 }
 .btn-social-icon .fa {
     color: white;
