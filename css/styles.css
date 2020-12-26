@@ -72,7 +72,6 @@ header {
     margin-left: 25px;
     padding-left: 0px;
     border: 1px lightgray solid;
-    color: darkgray;
 }
 .navbar-imgcard img {
     height: 150px;
@@ -80,6 +79,8 @@ header {
 }
 .navbar-imgcard p {
     margin-bottom: 0px;
+    font-size: smaller;
+    color: rgb(96,96,96);
 }
 .navbar-imgcard .btn-danger {   
     background-color: rgb(255, 18, 0);
