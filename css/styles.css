@@ -112,8 +112,11 @@ h4 {
 
 /*styles that apply within the main content*/
 .row-content {
-    padding: 50px 0;
+/*    padding: 50px 0;*/
     min-height: 200px;
+}
+.carousel-caption {
+    background-color: rgba(0,0,0,0.67);
 }
 
 /*styles that apply within the footer*/
