@@ -130,6 +130,7 @@ h4 {
 }
 .jp-card h4 {
     text-align: center;
+    margin-top: 10px;
 }
 .card {
     margin: 15px;
