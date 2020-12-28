@@ -120,15 +120,15 @@ h4 {
 .carousel-caption {
     background-color: rgba(0,0,0,0.67);
 }
-.jp-card {
+.info-card {
     background-color: white;
     border-radius: 15px;
 }
-.jp-thumbnail {
+.info-thumbnail {
     margin: 15px;
     border-radius: 10px;
 }
-.jp-card h4 {
+.info-card h4 {
     text-align: center;
     margin-top: 10px;
 }
