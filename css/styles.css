@@ -120,6 +120,9 @@ h4 {
 .carousel-caption {
     background-color: rgba(0,0,0,0.67);
 }
+.carousel-caption a {
+    color: rgb(200,18,0);
+}
 .info-card {
     background-color: white;
     border-radius: 15px;
