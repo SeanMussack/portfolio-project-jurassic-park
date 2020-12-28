@@ -1,2 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-visitor-center.html
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!--Additional CSS-->
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Jurassic Park: Laboratory</title>
+    <link rel="shortcut icon" type="image/png" href="../Jurassic_Park_logo_no_words.ico"/>
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="skipBox">
+                    <a class="skipToMainContent" href="#mainContent">Skip To Main Content</a>
+                </div>
+                <div class="top-shortcuts col-12 d-flex justify-content-end">
+                    <a href="../tickets/tickets.html"><i class="fa fa-ticket fa-md" aria-hidden="true"></i>Tickets</a>
+                    <a href="../park-info/calendar-and-hours.html"><i class="fa fa-calendar fa-md" aria-hidden="true"></i>Calendar</a>
+                    <a href="../park-info/jobs.html"><i class="fa fa-briefcase fa-md" aria-hidden="true"></i>Jobs</a>
+                    <a href="#" data-toggle="modal" data-target="#newsletterModal"><i class="fa fa-envelope fa-md" aria-hidden="true"></i>Email<span class="d-none d-md-inline"> Sign-up</span></a>
+                    <a href="#"><i class="fa fa-shopping-cart fa-md" aria-hidden="true"></i>Cart</a>
+                    <a href="../tickets/promo-code.html"><i class="fa fa-tag fa-md" aria-hidden="true"></i><span class="d-none d-md-inline">Promo </span>Code</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark px-0 px-md-2 pb-md-0">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand mx-auto" href="../index.html"><img src="../img/Jurassic_Park_logo_name_big.png" height="60" width=auto /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jurassicParkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-self-stretch px-3 px-md-0" id="jurassicParkNavbar">
+                    <div class="navbar-nav align-self-stretch">
+                        <div class="row">
+                            <div class="col-md nav-item px-md-0 dropdown">
+                                <a class="nav-link dropdown-toggle align-self-md-stretch py-md-4 px-2 px-lg-4 px-xl-5 w-100" href="#" id="dropdownParkInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Park Info</a>
+                                <div class="dropdown-menu w-100" aria-labelledby="dropdownParkInfo">
+                                    <div class="row">
+                                        <div class="navbar-imgcard col-md-5 col-lg-6 d-none d-lg-block">
+                                            <div class="media">
+                                                <img class="d-flex" src="../img/thumbnails/helicopter-thumbnail.png" alt="Helicopter over the ocean" />
+                                                <div class="media-body align-self-center">
+                                                    <h5><a href="../park-info/getting-here.html">Getting to Isla Nublar</a></h5>
+                                                    <p>Jurassic Park is conveniently located on a beautiful tropical island off the coast of Costa Rica. Plan your trip by boat or helicopter today!</p>
+                                                    <div class="d-flex justify-content-end">
+                                                        <a class="btn btn-danger " href="../park-info/getting-here.html">Learn More<span class="sr-only"> about Getting to Isla Nublar</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Park
+                                            </h4>
+                                            <a class="dropdown-item" href="../park-info/calendar-and-hours.html"><i class="fa fa-calendar fa-md" aria-hidden="true"></i>Calendar & Hours</a>
+                                            <a class="dropdown-item" href="../park-info/park-map.html"><i class="fa fa-map fa-md" aria-hidden="true"></i>Park Map</a>
+                                            <a class="dropdown-item" href="../park-info/getting-here.html"><i class="fa fa-ship fa-md" aria-hidden="true"></i>Getting Here</a>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Info
+                                            </h4>
+                                            <a class="dropdown-item" href="../park-info/accessibility.html"><i class="fa fa-deaf fa-md" aria-hidden="true"></i>Accessibility</a>
+                                            <a class="dropdown-item" href="../park-info/jobs.html"><i class="fa fa-briefcase fa-md" aria-hidden="true"></i>Jobs</a>
+                                            <a class="dropdown-item" href="../park-info/faq.html"><i class="fa fa-question-circle fa-md" aria-hidden="true"></i>FAQ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md nav-item px-md-0 dropdown">
+                                <a class="nav-link dropdown-toggle align-self-md-stretch py-md-4 px-2 px-lg-4 px-xl-5 w-100" href="#" id="dropdownThingsToDo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Things To Do</a>
+                                <div class="dropdown-menu w-100" aria-labelledby="dropdownThingsToDo">
+                                    <div class="row">
+                                        <div class="navbar-imgcard col-md-5 col-lg-6 d-none d-lg-block">
+                                            <div class="media">
+                                                <img class="d-flex" src="../img/thumbnails/island-tour-thumbnail.png" alt="Island tour" />
+                                                <div class="media-body align-self-center">
+                                                    <h5><a href="../things-to-do/island-tour.html">Tour the Island in Style</a></h5>
+                                                    <p>Get up close and personal with our dinosaurs on an automatic tour of beautiful Isla Nublar. Sit back, relax, and let our track-guided vehicles do the driving!</p>
+                                                    <div class="d-flex justify-content-end">
+                                                        <a class="btn btn-danger " href="../things-to-do/island-tour.html">Learn More<span class="sr-only"> about Touring the Island</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Tours
+                                            </h4>
+                                            <a class="dropdown-item" href="../things-to-do/island-tour.html"><i class="fa fa-car fa-md" aria-hidden="true"></i>Island Tour</a>
+                                            <a class="dropdown-item" href="../things-to-do/laboratory.html"><i class="fa fa-flask fa-md" aria-hidden="true"></i>Laboratory</a>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Shopping
+                                            </h4>
+                                            <a class="dropdown-item" href="../things-to-do/cafe.html"><i class="fa fa-coffee fa-md" aria-hidden="true"></i>Cretaceous Cafe</a>
+                                            <a class="dropdown-item" href="../things-to-do/gift-shop.html"><i class="fa fa-gift fa-md" aria-hidden="true"></i>Gift Shop</a>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md nav-item px-md-0 dropdown">
+                                <a class="nav-link dropdown-toggle align-self-md-stretch py-md-4 px-2 px-lg-4 px-xl-5 w-100" href="#" id="dropdownThingsToSee" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Things To See</a>
+                                <div class="dropdown-menu w-100" aria-labelledby="dropdownThingsToSee">
+                                    <div class="row">
+                                        <div class="navbar-imgcard col-md-5 col-lg-6 d-none d-lg-block">
+                                            <div class="media">
+                                                <img class="d-flex" src="../img/thumbnails/dinos-thumbnail.png" alt="Dinosaurs at the watering hole" />
+                                                <div class="media-body align-self-center">
+                                                    <h5><a href="../things-to-see/dinosaurs.html">Meet Our Dinosaurs</a></h5>
+                                                    <p>Learn all about the amazing creatures you'll be seeing on Isla Nublar. From pack hunters to herbivores, our dinosaurs come in all shapes and sizes.</p>
+                                                    <div class="d-flex justify-content-end">
+                                                        <a class="btn btn-danger " href="../things-to-see/dinosaurs.html">Learn More<span class="sr-only"> about Our Dinosaurs</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Attractions
+                                            </h4>
+                                            <a class="dropdown-item" href="../things-to-see/dinosaurs.html"><i class="fa fa-binoculars fa-md" aria-hidden="true"></i>Dinosaurs</a>
+                                            <a class="dropdown-item" href="../things-to-see/visitor-center.html"><i class="fa fa-institution fa-md" aria-hidden="true"></i>Visitor Center</a>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Sights
+                                            </h4>
+                                            <a class="dropdown-item" href="../things-to-see/gate.html"><i class="fa fa-columns fa-md" aria-hidden="true"></i>Park Gate</a>
+                                            <a class="dropdown-item" href="../things-to-see/waterfalls.html"><i class="fa fa-camera fa-md" aria-hidden="true"></i>Waterfalls</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md nav-item px-md-0 dropdown">
+                                <a class="nav-link dropdown-toggle align-self-md-stretch py-md-4 px-2 px-lg-4 px-xl-5 w-100" href="#" id="dropdownTickets" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tickets<span class="d-md-none d-lg-inline"> & Passes</span></a>
+                                <div class="dropdown-menu w-100" aria-labelledby="dropdownTickets">
+                                    <div class="row">
+                                        <div class="navbar-imgcard col-md-5 col-lg-6 d-none d-lg-block">
+                                            <div class="media">
+                                                <img class="d-flex" src="../img/thumbnails/birthday-thumbnail.png" alt="Birthday cakes" />
+                                                <div class="media-body align-self-center">
+                                                    <h5><a href="../tickets/birthday-parties.html">Have a Dino-mite Birthday</a></h5>
+                                                    <p>Get the coolest birthday party since the dawn of time! With optional free gifts and special VIP packages, you'll have everything you need to enjoy your special day.</p>
+                                                    <div class="d-flex justify-content-end">
+                                                        <a class="btn btn-danger" href="../tickets/birthday-parties.html">Book <span class="sr-only">Your Birthday Party </span>Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Admission
+                                            </h4>
+                                            <a class="dropdown-item" href="../tickets/tickets.html"><i class="fa fa-ticket fa-md" aria-hidden="true"></i>Tickets</a>
+                                            <a class="dropdown-item" href="../tickets/season-passes.html"><i class="fa fa-id-card fa-md" aria-hidden="true"></i>Season Passes</a>
+                                            <a class="dropdown-item" href="../tickets/promo-code.html"><i class="fa fa-tag fa-md" aria-hidden="true"></i>Promo Code</a>
+                                        </div>
+                                        <div class="col-md">
+                                            <h4 class="d-none d-md-block">
+                                                Events
+                                            </h4>
+                                            <a class="dropdown-item" href="../tickets/groups.html"><i class="fa fa-group fa-md" aria-hidden="true"></i>Groups</a>
+                                            <a class="dropdown-item" href="../tickets/birthday-parties.html"><i class="fa fa-birthday-cake fa-md" aria-hidden="true"></i>Birthday Parties</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mainContent" class="container">
+        <div class="row row-content pt-2">
+            <h2>Visitor Center</h2>
+            <div class="media row align-items-center">
+                <img class="d-flex col-12 col-md-6" src="../img/visitor-center/visitor-center.png" alt="The front of the Visitor Center, with trees, trucks, and a pond in front"/>
+                <p class="media-body ml-2 col-12 col-md mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum non distinctio quisquam quo molestias inventore quaerat tenetur, deserunt tempora minus commodi rem deleniti aspernatur natus voluptas repellat. Impedit, quod vero!</p>
+            </div>
+        </div>
+        <div class="media row row-content align-items-center justify-content-around info-card">
+            <img class="d-flex mx-auto mx-md-3 info-thumbnail" height="150" src="../img/visitor-center/fossils.png" alt="Fossils of Tyrannosaurus and Brontosaurus"/>
+            <div class="col col-md-8 media-body align-self-center">
+                <h4>See Our Beautiful Fossil Dinosaurs</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et facilis quae, ex optio vel consequatur facere ut inventore dolorum, ullam id itaque, ducimus maxime asperiores ea! Enim nesciunt quasi voluptatem?</p>
+            </div>
+        </div>
+        <div class="media row row-content align-items-center justify-content-around info-card">
+            <img class="d-flex mx-auto mx-md-3 order-md-2 info-thumbnail" height="150" src="../img/visitor-center/cretaceous-cafe.png" alt="Tables and chairs at the Cretaceous Cafe"/>
+            <div class="col col-md-8 media-body align-self-center">
+                <a href="../things-to-do/cafe.html"><h4>Grab a Snack at the Cretaceous Cafe</h4></a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error dignissimos incidunt quis harum quidem libero natus animi maxime, vel repellat veniam alias beatae reiciendis accusamus blanditiis pariatur laboriosam est aliquam.</p>
+            </div>
+        </div>
+        <div class="media row row-content align-items-center justify-content-around info-card">
+            <img class="d-flex mx-auto mx-md-3 info-thumbnail" height="150" src="../img/visitor-center/gift-shop.png" alt="Jurassic Park merchandise at the Gift Shop"/>
+            <div class="col col-md-8 media-body align-self-center">
+                <a href="../things-to-do/gift-shop.html"><h4>Get Some Swag at the Gallimimus Gift Shop</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aperiam, laudantium eveniet sequi tempore perspiciatis nam praesentium sunt impedit voluptatum voluptates veniam ab obcaecati consequatur provident labore adipisci dolores tempora.</p>
+            </div>
+        </div>
+        <div class="media row row-content align-items-center justify-content-around info-card">
+            <img class="d-flex mx-auto mx-md-3 order-md-2 info-thumbnail" height="150" src="../img/visitor-center/headphones.png" alt="A person wearing headphones"/>
+            <div class="col col-md-8 media-body align-self-center">
+                <a href="../park-info/accessibility.html"><h4>Asssisted Listening Devices, Wheelchairs, & More</h4></a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur optio quibusdam, voluptate sapiente obcaecati libero maiores, hic commodi alias fugit nam tempore incidunt, delectus quaerat. Culpa hic sapiente tempore.</p>
+            </div>
+        </div>
+        <div class="media row row-content align-items-center justify-content-around info-card">
+            <img class="d-flex mx-auto mx-md-3 info-thumbnail" height="150" src="../img/visitor-center/corporate-events.png" alt="A group of people watching a PowerPoint presentation"/>
+            <div class="col col-md-8 media-body align-self-center">
+                <a href="../tickets/groups.html"><h4>Corporate & Special Events</h4></a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, culpa inventore doloremque dicta exercitationem quasi. Rem molestias delectus expedita accusantium consectetur sint nihil non vel. Quidem itaque cumque vero maxime.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Park Info</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../park-info/calendar-and-hours.html" class="text-nowrap">Calendar & Hours</a></li>
+                            <li><a href="../park-info/park-map.html">Park Map</a></li>
+                            <li><a href="../park-info/getting-here.html">Getting Here</a></li>
+                            <li><a href="../park-info/accessibility.html">Accessibility</a></li>
+                            <li><a href="../park-info/jobs.html">Jobs</a></li>
+                            <li><a href="../park-info/faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5 class="text-nowrap">Things To Do</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../things-to-do/island-tour.html">Island Tour</a></li>
+                            <li><a href="../things-to-do/laboratory.html">Laboratory</a></li>
+                            <li><a href="../things-to-do/cafe.html">Cretaceous Cafe</a></li>
+                            <li><a href="../things-to-do/gift-shop.html">Gift Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5 class="text-nowrap">Things To See</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../things-to-see/dinosaurs.html">Dinosaurs</a></li>
+                            <li><a href="../things-to-see/gate.html">Park Gate</a></li>
+                            <li><a href="../things-to-see/waterfalls.html">Waterfalls</a></li>
+                            <li><a href="../things-to-see/visitor-center.html">Visitor Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5>Tickets <span class="text-nowrap">& Passes</span></h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../tickets/tickets.html" class="text-nowrap">Tickets</a></li>
+                            <li><a href="../tickets/season-passes.html">Season Passes</a></li>
+                            <li><a href="../tickets/promo-code.html">Promo Code</a></li>
+                            <li><a href="../tickets/groups.html">Groups</a></li>
+                            <li><a href="../tickets/birthday-parties.html">Birthday Parties</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="stay-connected col-6 col-md-4 col-lg d-flex justify-content-center">
+                    <div>
+                        <h5 class="text-nowrap">Stay Connected</h5>
+                        <div>
+                            <button data-toggle="modal" data-target="#newsletterModal" class="btn btn-danger">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>Email Sign-up
+                            </button>
+                        </div>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/JurassicWorld"><i class="fa fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook link</span></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/JurassicPark2go"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter link</span></a>
+                        <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/watch?v=-w-58hQ9dLk"><i class="fa fa-youtube" aria-hidden="true"></i><span class="sr-only">Youtube link</span></a>
+                    </div>
+                </div>
+                <div class="col col-md col-lg d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around align-items-center">
+                            <a href="../index.html"><img src="../img/Jurassic_Park_logo.png" width="200"/></a>
+                            <a href="https://jurassicpark.fandom.com/wiki/InGen"><img src="../img/ingen-logo.png" height="80" width=auto/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row site-copyright">
+                <div class="col-12">
+                    <div><a href="../privacy-policy.html">Privacy Policy</a></div>
+                    <div>All external websites linked were made by third parties with no connection to this website or its creator.</div>
+                    <div>For parody use only. No infringement intended.</div>
+                    <div>Jurassic Park and Jurassic World are trademarks and copyrights of Universal Studios and Amblin Entertainment, Inc.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="newsletterModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Email Sign-up</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="newsletterEmail">Email address</label>
+                                    <input type="email" class="form-control-sm" id="newsletterEmail" placeholder="Enter email" required/>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletterCheckbox" required/>
+                                        <label class="form-check-label" for="newsletterCheckbox"> I am at least 13 years old</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
