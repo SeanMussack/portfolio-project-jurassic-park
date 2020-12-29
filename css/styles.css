@@ -111,8 +111,14 @@ h4 {
 }
 
 /*styles that apply within the main content*/
-#mainContent {
-    margin-bottom: 60px;
+.banner {
+    padding: 40px;
+    background-color: darkred;
+    /*background-image: linear-gradient(to right bottom, rgb(169,0,0), rgb(110,20,20));*/
+    color: white;
+}
+.banner h1, .banner h2 {
+    font-weight: bold;
 }
 .row-content {
     margin: 30px 0px;
@@ -162,6 +168,7 @@ h4 {
 .site-footer {
     background-image: linear-gradient(to right bottom, black,rgb(12,0,0), rgb(69,0,0));
     padding: 20px 0px;
+    border-top: rgb(255, 18, 0) solid 3px;
 }
 .site-footer h5 {
     color: white;
