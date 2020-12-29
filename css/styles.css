@@ -9,6 +9,12 @@ body {
 h5 {
     text-transform: uppercase;
 }
+.bg-danger {
+    background-image: linear-gradient(rgb(200,18,0), rgb(200,18,0));
+}
+.bg-success {
+    background-image: linear-gradient(darkgreen, darkgreen);
+}
 
 /*styles that apply within the header*/
 header {
@@ -111,17 +117,22 @@ h4 {
 }
 
 /*styles that apply within the main content*/
-.banner {
-    padding: 40px;
+#mainContent {
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+}
+.jumbotron {
     background-color: darkred;
     /*background-image: linear-gradient(to right bottom, rgb(169,0,0), rgb(110,20,20));*/
     color: white;
+    border-radius: 0px;
 }
-.banner h1, .banner h2 {
+.jumbotron h1, .jumbotron h2 {
     font-weight: bold;
 }
 .row-content {
-    margin: 30px 0px;
+    margin: 30px;
 }
 .carousel-caption {
     background-color: rgba(0,0,0,0.67);
@@ -146,7 +157,7 @@ h4 {
 }
 .card {
     margin: 15px;
-    width: 450px;
+    width: 500px;
     max-width: 80%;
     height: max-content;
 }
