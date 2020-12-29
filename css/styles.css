@@ -70,6 +70,8 @@ header {
     margin-top: 0px;
     border: 0px;
     background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 .dropdown-menu .row {
     width: inherit;
@@ -117,11 +119,6 @@ h4 {
 }
 
 /*styles that apply within the main content*/
-#mainContent {
-    margin: 0px;
-    padding: 0px;
-    min-width: 100%;
-}
 .jumbotron {
     background-color: darkred;
     /*background-image: linear-gradient(to right bottom, rgb(169,0,0), rgb(110,20,20));*/
