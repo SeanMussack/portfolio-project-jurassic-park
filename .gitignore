@@ -1,5 +1,5 @@
-node_modules
-_work
+node_modules/
+_work/
 !bootstrap.min.css
 !font-awesome.min.css
 !bootstrap-social.css
