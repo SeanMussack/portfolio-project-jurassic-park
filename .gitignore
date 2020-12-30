@@ -1,2 +1,8 @@
 node_modules
 _work
+!bootstrap.min.css
+!font-awesome.min.css
+!bootstrap-social.css
+!jquery.slim.min.js
+!popper.slim.js
+!bootstrap.min.js
