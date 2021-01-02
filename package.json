@@ -4,9 +4,15 @@
   "description": "This is a website for the fictional theme park from the film Jurassic Park.",
   "main": "index.html",
   "scripts": {
+    "build-test": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders",
     "lite": "lite-server",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass -o css/ css/",
+    "clean": "rimraf dist",
+    "setup": "md dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico dist && copyfiles img/** dist",
+    "copy-html-folders": "copyfiles park-info/** dist && copyfiles things-to-do/** dist && copyfiles things-to-see/** dist && copyfiles tickets/** dist",
+    "usemin-mainfolder": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin privacy-policy.html -d dist --htmlmin -o dist/privacy-policy.html"
   },
   "repository": {
     "type": "git",
@@ -19,7 +25,12 @@
   },
   "homepage": "https://github.com/SeanMussack/portfolio-project-jurassic-park#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",

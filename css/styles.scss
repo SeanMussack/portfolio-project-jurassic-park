@@ -1,0 +1,219 @@
+$red-jp-primary: rgb(255, 18, 0);
+$red-jp-secondary: rgb(200, 18, 0);
+$yellow-jp: rgb(255, 232, 0);
+$almost-black: rgb(18,18,18);
+$very-dark-gray: rgb(96,96,96);
+$almost-white: rgb(250,250,250);
+
+/*styles that apply to the whole page*/
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+.fa {
+    margin-right: 6px;
+}
+h5 {
+    text-transform: uppercase;
+}
+.bg-danger {
+    background-image: linear-gradient($red-jp-secondary, $red-jp-secondary);
+}
+.bg-success {
+    background-image: linear-gradient(darkgreen, darkgreen);
+}
+
+/*styles that apply within the header*/
+header {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+.skipBox {
+    position: absolute;
+    padding: 2px 5px;
+}
+.skipBox:focus-within {
+    background-color: white;
+    color: almost-black;
+}
+.skipToMainContent {
+    padding: 0px 5px;
+    text-decoration: underline;
+    color: black;
+}
+.top-shortcuts {
+    margin-top: 5px;
+}
+.top-shortcuts a {
+    color:lightgray;
+    margin-left: 10px;
+    font-size: small;
+    text-align: center;
+}
+.top-shortcuts a:focus {
+    text-decoration: underline;
+}
+.top-shortcuts i {
+    color: $yellow-jp;
+}
+.navbar {
+    padding-top: 0px;
+}
+.nav-brand {
+    padding: 0px, 0px, 20px, 20px;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-link:hover, .nav-link:focus {
+    background-color: $almost-black;
+}
+.dropdown {
+    position: initial;
+}
+.dropdown-menu {
+    margin-top: 0px;
+    border: 0px;
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.dropdown-menu .row {
+    width: inherit;
+}
+.navbar-imgcard {
+    margin-left: 25px;
+    padding-left: 0px;
+    border: 1px lightgray solid;
+}
+.navbar-imgcard img {
+    height: 150px;
+    margin-right: 10px;
+}
+.navbar-imgcard p {
+    margin-bottom: 0px;
+    font-size: smaller;
+    color: $very-dark-gray;
+}
+.navbar-imgcard .btn-danger {   
+    background-color: $red-jp-primary;
+    border: 0px;
+    color: white;
+    margin: 3px 0px;
+}
+.navbar-imgcard .btn-danger:hover, .navbar-imgcard .btn-danger:focus {
+    background-color: $red-jp-secondary;
+    text-decoration: none;
+    color: white;
+}
+h4 {
+    font-size: large;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-bottom: 1px gray solid;
+}
+.dropdown-menu a {
+    color: darkred;
+}
+.dropdown-menu a:hover, .dropdown-menu a:focus {
+    color: darkred;
+    text-decoration: underline;
+}
+.dropdown-item:focus {
+    background-color: $almost-white;
+}
+
+/*styles that apply within the main content*/
+.jumbotron {
+    background-color: darkred;
+    color: white;
+    border-radius: 0px;
+}
+.jumbotron h1, .jumbotron h2 {
+    font-weight: bold;
+}
+.row-content {
+    margin: 30px;
+}
+.carousel-caption {
+    background-color: rgba(0,0,0,0.67);
+}
+.carousel-caption a {
+    color: $yellow-jp;
+}
+.info-card {
+    background-color: white;
+    border-radius: 15px;
+}
+.info-thumbnail {
+    margin: 15px;
+    border-radius: 10px;
+}
+.info-card h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+.info-card a {
+    color: darkred;
+}
+.card {
+    margin: 15px;
+    width: 500px;
+    max-width: 80%;
+    height: max-content;
+}
+.card-header h5 {
+    margin-bottom: 0px;
+}
+.card-body {
+    width: 100%;
+}
+.card img {
+    margin: 0px;
+    padding: 0px;
+}
+.card p {
+    margin-left: 10px;
+}
+
+/*styles that apply within the footer*/
+.site-footer {
+    background-image: linear-gradient(to right bottom, black,rgb(12,0,0), rgb(69,0,0));
+    padding: 20px 0px;
+    border-top: $red-jp-primary solid 3px;
+}
+.site-footer h5 {
+    color: white;
+}
+.site-footer a {
+    color: $yellow-jp;
+}
+.site-footer a:focus {
+    text-decoration: underline;
+}
+.stay-connected {
+    margin-left: 10px;
+}
+.btn-social-icon .fa {
+    color: white;
+}
+.site-footer .btn-danger {
+    background-color: $red-jp-primary;
+    margin-bottom: 10px;
+    color: white;
+    border: 0px;
+}
+.site-footer .btn-danger:hover {
+    background-color: $red-jp-secondary;
+}
+.site-copyright {
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+}
+.site-copyright a {
+    color: inherit;
+    text-decoration: underline;
+}
