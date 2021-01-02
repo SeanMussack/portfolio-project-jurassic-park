@@ -5,18 +5,16 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run imagemin && npm run copyimages && npm run copy-html-folders && npm run copy-index.md",
-    "build-lite": "npm run clean-lite",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "clean": "rimraf docs",
-    "clean-lite": "rimraf js/main.js && rimraf css/main.css && rimraf fonts",
     "setup": "md docs",
-    "imagemin": "imagemin img/* -o docs/img",
+    "usemin-mainfolder": "usemin index.html -d docs --htmlmin -o docs/index.html && usemin privacy-policy.html -d docs --htmlmin -o docs/privacy-policy.html",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
+    "imagemin": "imagemin img/* -o docs/img",
     "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico docs && copyfiles img/** docs",
     "copy-html-folders": "copyfiles park-info/** docs && copyfiles things-to-do/** docs && copyfiles things-to-see/** docs && copyfiles tickets/** docs",
-    "copy-index.md": "copyfiles index.md docs",
-    "usemin-mainfolder": "usemin index.html -d docs --htmlmin -o docs/index.html && usemin privacy-policy.html -d docs --htmlmin -o docs/privacy-policy.html"
+    "copy-index.md": "copyfiles index.md docs"
   },
   "repository": {
     "type": "git",
