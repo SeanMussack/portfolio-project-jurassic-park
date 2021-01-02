@@ -114,7 +114,7 @@ h4 {
     color: darkred;
     text-decoration: underline;
 }
-.dropdown-menu a.not-yet-implemented {
+.dropdown-menu .not-yet-implemented {
     text-decoration: line-through;
     color: gray;
 }
