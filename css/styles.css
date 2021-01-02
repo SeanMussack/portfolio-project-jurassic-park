@@ -9,12 +9,6 @@ body {
 h5 {
     text-transform: uppercase;
 }
-.bg-danger {
-    background-image: linear-gradient(rgb(169,9,0), rgb(169,9,0));
-}
-.bg-success {
-    background-image: linear-gradient(darkgreen, darkgreen);
-}
 
 /*styles that apply within the header*/
 header {
@@ -138,6 +132,12 @@ h4 {
 .row-content {
     margin: 30px;
 }
+.row-content > p {
+    font-size: large;
+}
+.row-content a {
+    color: rgb(169,9,0);
+}
 .carousel-caption {
     background-color: rgba(0,0,0,0.67);
 }
@@ -160,10 +160,31 @@ h4 {
     color: darkred;
 }
 .card {
+    box-shadow: 7px 5px rgba(0,0,0,0.5);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.dino-card {
     margin: 15px;
     width: 500px;
     max-width: 80%;
     height: max-content;
+}
+.herbivore {
+    border-color: darkgreen;
+}
+.herbivore .card-header {
+    background-color: darkgreen;
+}
+.carnivore {
+    border-color: rgb(169,9,0);
+}
+.carnivore .card-header {
+    background-color: rgb(169,9,0);
+}
+.lab-card {
+    margin: 15px;
+    max-width: 300px;
 }
 .card-header h5 {
     margin-bottom: 0px;
@@ -177,6 +198,23 @@ h4 {
 }
 .card p {
     margin-left: 10px;
+}
+#mainContent .btn-danger {
+    background-color: rgb(200,18,0);
+    color: white;
+    border: 0px;
+}
+#mainContent .btn-danger:hover {
+    background-color: rgb(169,9,0);
+}
+.banner {
+    background-color: darkred;
+}
+.banner .row {
+    padding: 0px 10px 0px 10px;
+}
+.banner .col-md-4 {
+    padding: 0;
 }
 
 /*styles that apply within the footer*/
