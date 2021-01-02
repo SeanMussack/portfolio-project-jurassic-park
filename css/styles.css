@@ -126,7 +126,7 @@ h4 {
     color: white;
     border-radius: 0px;
 }
-.jumbotron h1, .jumbotron h2 {
+.jumbotron h1 {
     font-weight: bold;
 }
 .row-content {
@@ -185,6 +185,11 @@ h4 {
 .lab-card {
     margin: 15px;
     max-width: 300px;
+}
+.visitor-center-card {
+    margin: 10px;
+    max-width: 270px;
+    font-size: larger;
 }
 .card-header h5 {
     margin-bottom: 0px;
