@@ -4,15 +4,15 @@
   "description": "This is a website for the fictional theme park from the film Jurassic Park.",
   "main": "index.html",
   "scripts": {
-    "build-test": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders",
+    "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
-    "clean": "rimraf dist",
-    "setup": "md dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico dist && copyfiles img/** dist",
-    "copy-html-folders": "copyfiles park-info/** dist && copyfiles things-to-do/** dist && copyfiles things-to-see/** dist && copyfiles tickets/** dist",
-    "usemin-mainfolder": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin privacy-policy.html -d dist --htmlmin -o dist/privacy-policy.html"
+    "clean": "rimraf docs",
+    "setup": "md docs",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
+    "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico docs && copyfiles img/** docs",
+    "copy-html-folders": "copyfiles park-info/** docs && copyfiles things-to-do/** docs && copyfiles things-to-see/** docs && copyfiles tickets/** docs",
+    "usemin-mainfolder": "usemin index.html -d docs --htmlmin -o docs/index.html && usemin privacy-policy.html -d docs --htmlmin -o docs/privacy-policy.html"
   },
   "repository": {
     "type": "git",
