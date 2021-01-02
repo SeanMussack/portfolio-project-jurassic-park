@@ -4,7 +4,7 @@
   "description": "This is a website for the fictional theme park from the film Jurassic Park.",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders",
+    "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders && npm run copy-index.md",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "clean": "rimraf docs",
@@ -12,6 +12,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico docs && copyfiles img/** docs",
     "copy-html-folders": "copyfiles park-info/** docs && copyfiles things-to-do/** docs && copyfiles things-to-see/** docs && copyfiles tickets/** docs",
+    "copy-index.md": "copyfiles index.md docs",
     "usemin-mainfolder": "usemin index.html -d docs --htmlmin -o docs/index.html && usemin privacy-policy.html -d docs --htmlmin -o docs/privacy-policy.html"
   },
   "repository": {
