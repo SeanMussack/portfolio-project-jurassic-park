@@ -4,7 +4,7 @@
   "description": "This is a website for the fictional theme park from the film Jurassic Park.",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders && npm run copy-index.md",
+    "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run imagemin && npm run copyimages && npm run copy-html-folders && npm run copy-index.md",
     "build-lite": "npm run clean-lite",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
