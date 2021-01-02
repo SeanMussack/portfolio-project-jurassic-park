@@ -9,7 +9,7 @@
     "scss": "node-sass -o css/ css/",
     "clean": "rimraf docs",
     "setup": "md docs",
-    "usemin-mainfolder": "usemin index.html -d docs --htmlmin -o docs/index.html && usemin privacy-policy.html -d docs --htmlmin -o docs/privacy-policy.html",
+    "usemin-mainfolder": "usemin index.html -d docs --htmlmin -o docs/index.html",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "imagemin": "imagemin img/* -o docs/img",
     "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico docs && copyfiles img/** docs",
