@@ -101,6 +101,10 @@ header {
     text-decoration: none;
     color: white;
 }
+.navbar-imgcard .btn-not-yet-implemented, .navbar-imgcard .btn-not-yet-implemented:hover, .navbar-imgcard .btn-not-yet-implemented:focus {
+    background-color: gray;
+    text-decoration: line-through;
+}
 h4 {
     font-size: large;
     margin-left: 25px;
@@ -114,7 +118,7 @@ h4 {
     color: darkred;
     text-decoration: underline;
 }
-.dropdown-menu .not-yet-implemented, .dropdown-menu a.not-yet-implemented:hover {
+.dropdown-menu .not-yet-implemented, .dropdown-menu a.not-yet-implemented:hover, .dropdown-menu a.not-yet-implemented:focus {
     text-decoration: line-through;
     color: gray;
 }
@@ -187,7 +191,7 @@ h4 {
 .site-footer a {
     color: rgb(255, 232, 0);
 }
-.site-footer .not-yet-implemented, .site-footer a.not-yet-implemented:hover {
+.site-footer .not-yet-implemented, .site-footer a.not-yet-implemented:hover, .site-footer a.not-yet-implemented:focus {
     text-decoration: line-through;
     color: gray;
 }
