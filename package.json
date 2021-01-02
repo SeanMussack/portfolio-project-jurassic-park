@@ -5,10 +5,13 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run setup && npm run usemin-mainfolder && npm run copyfonts && npm run copyimages && npm run copy-html-folders && npm run copy-index.md",
+    "build-lite": "npm run clean-lite",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "clean": "rimraf docs",
+    "clean-lite": "rimraf js/main.js && rimraf css/main.css && rimraf fonts",
     "setup": "md docs",
+    "imagemin": "imagemin img/* -o docs/img",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico docs && copyfiles img/** docs",
     "copy-html-folders": "copyfiles park-info/** docs && copyfiles things-to-do/** docs && copyfiles things-to-see/** docs && copyfiles tickets/** docs",
