@@ -144,21 +144,6 @@ h4 {
 .carousel-caption a {
     color: rgb(255, 232, 0);
 }
-.info-card {
-    background-color: white;
-    border-radius: 15px;
-}
-.info-thumbnail {
-    margin: 15px;
-    border-radius: 10px;
-}
-.info-card h4 {
-    text-align: center;
-    margin-top: 10px;
-}
-.info-card a {
-    color: darkred;
-}
 .card {
     box-shadow: 7px 5px rgba(0,0,0,0.5);
     border: 2px solid black;
@@ -215,12 +200,20 @@ h4 {
 .banner {
     background-color: darkred;
 }
-.banner .row {
-    padding: 0px 10px 0px 10px;
+.banner h3 {
+    color: white;
+    margin: auto;
+    text-align: center;
 }
 .banner .col-md-4 {
-    padding: 0;
+    padding: 10px 10px;
 }
+/*#banner-when-dinosaurs-ruled-the-earth {
+    position: fixed;
+    width: inherit;
+    background-image: url("../img/visitor-center/when-dinosaurs-ruled-the-earth-large.png");
+    opacity: 0.5;
+}*/
 
 /*styles that apply within the footer*/
 .site-footer {
