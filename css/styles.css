@@ -1,14 +1,35 @@
 /*styles that apply to the whole page*/
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(250, 241, 241);
 }
 .fa {
     margin-right: 6px;
+    margin-left: 6px;
 }
 h5 {
     text-transform: uppercase;
 }
+hr {
+    border-color: darkgray;
+}
+table {
+    border: 1px black solid;
+}
+table .bg-danger {
+    background-image: linear-gradient(rgb(200,18,0), rgb(200,18,0)      );
+}
+th, td {
+    text-align: center;
+    border-left: 1px black solid;
+}
+.fa-check {
+    color: green;
+}
+.fa-times {
+    color: rgb(169,9,0)
+}
+
 
 /*styles that apply within the header*/
 header {
@@ -208,18 +229,60 @@ h4 {
 .banner .col-md-4 {
     padding: 10px 10px;
 }
+.img-shadow {
+    box-shadow: 7px 5px rgba(0,0,0,0.5);
+}
 /*#banner-when-dinosaurs-ruled-the-earth {
     position: fixed;
     width: inherit;
     background-image: url("../img/visitor-center/when-dinosaurs-ruled-the-earth-large.png");
     opacity: 0.5;
 }*/
+.buy-column {
+    text-align: center;
+    font-size: smaller;
+}
+.buy-disclaimer {
+    font-size: small;
+    font-style: italic;
+}
+.buy-price {
+    font-size: xx-large;
+    color: green;
+}
+.tel-column {
+    text-align: center;
+    font-size: smaller;
+}
+.jumbo-img-container {
+    padding: 0px;
+    height: fit-content;
+}
+.jumbo-img-bg {
+    width: inherit;
+    z-index: -1;
+}
+.jumbo-img-text {
+    background-color: rgba(0,0,0,0.67);
+    width: max-content;
+    max-width: 90%;
+    max-height: 500px;
+    margin: auto;
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    padding: 20px 40px;
+}
+.jumbo-img-text a {
+    color: rgb(255, 232, 0);
+}
 
 /*styles that apply within the footer*/
 .site-footer {
     background-image: linear-gradient(to right bottom, black,rgb(12,0,0), rgb(69,0,0));
     padding: 20px 0px;
-    border-top: rgb(200,9,0) solid 3px;
+    border-top: rgb(200,18,0) solid 3px;
 }
 .site-footer h5 {
     color: white;
@@ -239,6 +302,7 @@ h4 {
 }
 .btn-social-icon .fa {
     color: white;
+    margin: 0;
 }
 .site-footer .btn-danger {
     background-color: rgb(200,18,0);
