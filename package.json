@@ -13,7 +13,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "imagemin": "imagemin img/* -o docs/img",
     "copyimages": "copyfiles Jurassic_Park_logo_no_words.ico docs && copyfiles img/** docs",
-    "copy-html-folders": "copyfiles park-info/** docs && copyfiles things-to-do/** docs && copyfiles things-to-see/** docs && copyfiles tickets/** docs",
+    "copy-html-folders": "copyfiles park-info/** docs && copyfiles things-to-do/** docs && copyfiles things-to-see/** docs && copyfiles tickets-and-passes/** docs",
     "copy-index.md": "copyfiles index.md docs"
   },
   "repository": {
