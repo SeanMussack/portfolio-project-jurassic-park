@@ -346,7 +346,7 @@ h4 {
 .infoAccordion .card-body {
     padding-bottom: 0px;
 }
-.infoAccordion .fa-plus {
+.infoAccordion .fa-plus, .infoAccordion .fa-minus {
     position: absolute;
     right: 9px;
     top: 13px;
