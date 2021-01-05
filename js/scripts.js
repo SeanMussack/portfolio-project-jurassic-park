@@ -7,4 +7,10 @@ $(document).ready(function(){
             $(this).find(".fa-plus").removeClass("fa-plus");
         }
     });
-})
+    $("#newsletterModal").on("shown.bs.modal", function(){
+        $(this).find("#newsletterEmail").focus();
+    });
+    $("#promoCodeModal").on("shown.bs.modal", function(){
+        $(this).find("#promoCode").focus();
+    });
+});
