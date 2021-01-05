@@ -46,17 +46,22 @@ header {
     color: white;
 }
 .skipBox {
+    z-index: 2;
     position: absolute;
-    padding: 2px 5px;
+    left: 2px;
+    top: 2px;
+    padding: 0px 2px;
 }
 .skipBox:focus-within {
     background-color: white;
     color: rgb(18,18,18);
 }
 .skipToMainContent {
-    padding: 0px 5px;
     text-decoration: underline;
-    color: black;
+    color: transparent;
+}
+.skipToMainContent:focus {
+    color:black;
 }
 .top-shortcuts {
     margin-top: 5px;
@@ -79,11 +84,15 @@ header {
 .nav-brand {
     padding: 0px, 0px, 20px, 20px;
 }
+.nav-item {
+    min-width: max-content;
+}
 .nav-link {
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
 }
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover {
     background-color: rgb(18,18,18);
 }
 .dropdown {
@@ -393,6 +402,10 @@ cite {
     padding: 20px 0px;
     border-top: rgb(200,18,0) solid 3px;
 }
+.site-footer .col-6 > div, .stay-connected > div {
+    margin-left: auto;
+    margin-right: auto;
+}
 .site-footer h5 {
     color: white;
 }
@@ -405,9 +418,6 @@ cite {
 }
 .site-footer a:focus {
     text-decoration: underline;
-}
-.stay-connected {
-    margin-left: 10px;
 }
 .btn-social-icon .fa {
     color: white;
