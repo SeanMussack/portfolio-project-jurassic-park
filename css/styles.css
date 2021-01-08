@@ -160,6 +160,14 @@ h4 {
 }
 
 /*styles that apply within the main content*/
+#mainContent {
+    margin-top: 118px;
+}
+@media screen and (min-width: 768px){
+    #mainContent {
+        margin-top: 96px;
+    }
+}
 .jumbotron {
     background-color: darkred;
     color: white;
@@ -289,6 +297,7 @@ h4 {
 .jumbo-img-container {
     padding: 0px;
     height: fit-content;
+    position: relative;
 }
 .jumbo-img-bg {
     width: inherit;
@@ -302,7 +311,7 @@ h4 {
     margin: auto;
     color: white;
     position: absolute;
-    top: 130px;
+    top: 20px;
     left: 20px;
     padding: 20px;
 }
@@ -390,6 +399,13 @@ cite {
 }
 .gift-shop-column {
     font-size: larger;
+}
+div .download-park-map-button {
+    text-decoration: none;
+}
+#mainContent h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /*styles that apply within the footer*/
