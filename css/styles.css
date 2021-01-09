@@ -255,6 +255,11 @@ h4 {
     margin: 0px;
     padding: 0px;
 }
+.card .btn-danger {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 #mainContent .btn-danger {
     background-color: rgb(200,18,0);
     color: white;
