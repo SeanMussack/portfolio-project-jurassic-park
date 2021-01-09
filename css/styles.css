@@ -240,6 +240,11 @@ h4 {
     color: green;
     margin-bottom: 0px;
 }
+.index-card {
+    margin: 15px;
+    max-width: 300px;
+    color: black;
+}
 .card-header h5 {
     margin-bottom: 0px;
 }
@@ -408,6 +413,9 @@ div .download-park-map-button {
     #mainContent h1, h2 {
         margin-top: 30px;
     }
+}
+#indexCarousel .carousel-inner {
+    box-shadow: none;
 }
 
 /*styles that apply within the footer*/
