@@ -372,9 +372,9 @@ h4 {
         width: initial;
     }
 }
-.dino-icon, .dino-info-border {
+.dino-icon {
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 7px;
 }
 #dinosaursAccordion h3 {
