@@ -359,14 +359,19 @@ h4 {
     right: 7px;
     top: 14px;
 }
-/*begin: to delete*/
-.dino-card {
-    margin: 15px;
-    width: 500px;
-    max-width: 80%;
-    height: max-content;
+#dinosaursAccordion .card {
+    position: relative;
+    left: 10px;
+    width: 310px;
+    border: 3px gray solid;
+    border-top: 0px;
 }
-/*end: to delete*/
+@media screen and (min-width: 768px){
+    #dinosaursAccordion .card {
+        left: 0px;
+        width: initial;
+    }
+}
 .dino-icon, .dino-info-border {
     position: absolute;
     top: 7px;
@@ -386,18 +391,16 @@ h4 {
 #dinosaursAccordion .card-body {
     position: relative;
     left: 15px;
-    border: 4px gray solid;
-    border-top: 0px;
 }
-#dinosaursAccordion .herbivore .card-body {
-    border-color: #39B549;
+#dinosaursAccordion .herbivore {
+    border-color: green;
 }
-#dinosaursAccordion .carnivore .card-body {
-    border-color: #EB1F27;
+#dinosaursAccordion .carnivore {
+    border-color: rgb(169,9,0);
 }
 .dino-image {
     margin-right: 15px;
-    max-width: 300px;
+    max-width: 310px;
     height: auto;
 }
 #dinosaursAccordion .card-text {
