@@ -163,7 +163,7 @@ h4 {
 #mainContent {
     margin-top: 118px;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 485px){
     #mainContent {
         margin-top: 96px;
     }
